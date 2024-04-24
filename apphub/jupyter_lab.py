@@ -64,7 +64,7 @@ Featurize 官方 JupyterLab 应用
         super().installation(install_location, conda_env, work_dir)
         with self.conda_activate(conda_env):
             self.execute_command(
-                f"pip install {(Path(__file__).parent.parent / 'workspace-0.1.0.tar.gz').as_posix()}"
+                f"pip install {(Path(__file__).parent / 'workspace-0.1.0.tar.gz').as_posix()}"
             )
         self.app_installed()
 
