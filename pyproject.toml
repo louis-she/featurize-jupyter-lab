@@ -13,8 +13,8 @@ Changelog = "https://github.com/louis-she/featurize-jupyter-lab/blob/master/CHAN
 Issues = "https://github.com/louis-she/featurize-jupyter-lab/issues"
 
 [featurize]
-port = "28750"
-op_port = "30569"
+port = "10000"
+op_port = "10001"
 icon = "https://featurize-public.oss-cn-beijing.aliyuncs.com/apps/jupyter.png"
 author_github = "https://github.com/louis-she"
 name = "JupyterLab"
