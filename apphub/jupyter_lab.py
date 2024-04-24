@@ -27,8 +27,6 @@ class JupyterLab(App):
     class JupyterLabOption(AppOption):
         conda_env: str = "base"
         work_dir: str = "/home/featurize"
-        token: str = ""
-        query: str = ""
 
     cfg: JupyterLabOption
 
@@ -59,8 +57,6 @@ Featurize 官方 JupyterLab 应用
         return demo
 
     def installation(self, install_location, conda_env, work_dir):
-        self.cfg.token = generate_random_token()
-        self.cfg.query = f"token={self.cfg.token}"
         super().installation(install_location, conda_env, work_dir)
         with self.conda_activate(conda_env):
             self.execute_command(
@@ -73,7 +69,8 @@ Featurize 官方 JupyterLab 应用
         with self.conda_activate(self.cfg.conda_env):
             self.execute_command(
                 f"""jupyter lab \
---ServerApp.token='{self.cfg.token}' \
+--ServerApp.token='' \
+--ServerApp.password=='' \
 --ip='0.0.0.0' \
 --port={self.port} \
 --no-browser \
