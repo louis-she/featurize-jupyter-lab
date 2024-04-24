@@ -3,7 +3,6 @@ from pathlib import Path
 
 import gradio as gr
 from apphub.app import App, AppOption
-from apphub.helper import generate_random_token
 
 
 class JupyterLab(App):

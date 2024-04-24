@@ -19,3 +19,4 @@ icon = "https://featurize-public.oss-cn-beijing.aliyuncs.com/apps/jupyter.png"
 author_github = "https://github.com/louis-she"
 name = "JupyterLab"
 newtab = false
+has_launching_page = false
