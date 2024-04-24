@@ -70,7 +70,7 @@ Featurize 官方 JupyterLab 应用
             self.execute_command(
                 f"""jupyter lab \
 --ServerApp.token='' \
---ServerApp.password=='' \
+--ServerApp.password='' \
 --ip='0.0.0.0' \
 --port={self.port} \
 --no-browser \
