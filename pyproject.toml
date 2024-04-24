@@ -1,0 +1,21 @@
+[project]
+name = "jupyter_lab"
+description = "Featurize 官方 JupyterLab 应用"
+authors = [{name= "Chenglu", email = "chenglu.she@gmail.com"}]
+version = "1.0.0"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/louis-she/featurize-jupyter-lab"
+Documentation = "https://github.com/louis-she/featurize-jupyter-lab/blob/master/README.md"
+Repository = "https://github.com/louis-she/featurize-jupyter-lab"
+Changelog = "https://github.com/louis-she/featurize-jupyter-lab/blob/master/CHANGELOG.md"
+Issues = "https://github.com/louis-she/featurize-jupyter-lab/issues"
+
+[featurize]
+port = "28750"
+op_port = "30569"
+icon = "https://featurize-public.oss-cn-beijing.aliyuncs.com/apps/jupyter.png"
+author_github = "https://github.com/louis-she"
+name = "JupyterLab"
+newtab = false
