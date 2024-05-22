@@ -58,9 +58,7 @@ Featurize 官方 JupyterLab 应用
     def installation(self, install_location, conda_env, work_dir):
         super().installation(install_location, conda_env, work_dir)
         with self.conda_activate(conda_env):
-            self.execute_command(
-                f"pip install {(Path(__file__).parent / 'workspace-0.1.0.tar.gz').as_posix()}"
-            )
+            self.execute_command(f"pip install jupyterlab~=4.0")
         self.app_installed()
 
     def start(self):
