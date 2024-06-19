@@ -73,7 +73,7 @@ Featurize 官方 JupyterLab 应用
 --no-browser \
 --allow-root \
 --ServerApp.allow_origin='*' \
---ServerApp.tornado_settings="{{'headers': {{'Content-Security-Policy': 'frame-ancestors self {os.environ["FEATURIZE_INSTANCE_SHORT_ID"]}.app.featurize.cn *.app.featurize.cn'}} }}"
+--ServerApp.tornado_settings="{{'headers': {{'Content-Security-Policy': 'frame-ancestors self *'}} }}"
 """,
                 daemon=True,
                 cwd=self.cfg.work_dir,
