@@ -1,6 +1,3 @@
-import os
-from pathlib import Path
-
 import gradio as gr
 from apphub.app import App, AppOption
 
@@ -72,6 +69,7 @@ Featurize 官方 JupyterLab 应用
 --port={self.port} \
 --no-browser \
 --allow-root \
+--FileContentsManager.delete_to_trash=false \
 --ServerApp.allow_origin='*' \
 --ServerApp.tornado_settings="{{'headers': {{'Content-Security-Policy': 'frame-ancestors self *'}} }}"
 """,
